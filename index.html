@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Indonesia Rainfall Map</title>
+    <meta name="description" content="Interactive map of annual rainfall change over Indonesia, 1860–2090, under four emission scenarios: INM-CM4-8 (CMIP6) and an ST-GNN prediction." />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script>
+      const t = new URLSearchParams(location.search).get('theme');
+      document.documentElement.dataset.theme =
+        t === 'light' || t === 'dark' ? t : matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
