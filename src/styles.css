@@ -1,5 +1,5 @@
 :root {
-  --bg: #e9eeec;
+  --bg: #fffaf1;
   --surface: #f4f7f6;
   --ink: #1f2a2e;
   --muted: #56676c;
@@ -18,7 +18,7 @@
 }
 
 :root[data-theme="dark"] {
-  --bg: #132024;
+  --bg: #1c1c1c;
   --surface: #1a2a2f;
   --ink: #e2ebe9;
   --muted: #9fb0b2;
